@@ -1,0 +1,9 @@
+development: &development
+  adapter: async
+
+test:
+  adapter: async
+
+production:
+  adapter: redis
+  url: redis://redistogo:7951cd06c72df17a39b5bb10d43d3f7d@spinyfin.redistogo.com:9025/

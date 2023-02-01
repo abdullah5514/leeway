@@ -1,0 +1,39 @@
+.dms-h2 {
+  font-weight: 400;
+  width: 180px;
+}
+
+.create-dm-button {
+  align-items: flex-end;
+  // padding-left: 60px;
+  box-sizing: border-box;
+}
+
+.dm-square-title-symbol, .dm-circle-title-symbol {
+  display: flex;
+  max-height: 14px;
+  min-width: 15px;
+  width: 15px;
+
+  margin-right: 5px;
+  padding-top: 2px;
+
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.dm-square-title-symbol {
+  border-radius: 4px;
+  background: rgb(202,196,201);
+  opacity: .7;
+
+  font-size: 12px;
+  font-weight: 400;
+  color: #4D394B;
+}
+
+.dm-circle-title-symbol {
+  font-size: 18px;
+}

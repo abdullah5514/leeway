@@ -1,0 +1,44 @@
+$timestamp-gray: #717274;
+
+.chat-col, .message-feed-ul, .message-input {
+  height: 100%;
+}
+
+.chat-col {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 220px);
+  height: 97vh;
+  // bottom: 0;
+  padding: 15px 30px;
+}
+
+.workspace-title {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.messaging {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-end;
+}
+
+.message-feed-div {
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: auto;
+  justify-content: flex-start;
+  margin: 10px 0;
+}
+
+.message-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  border: 2px solid $timestamp-gray;
+  border-radius: 5px;
+}

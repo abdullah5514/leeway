@@ -1,0 +1,19 @@
+<main id="root"></main>
+
+<script type="text/javascript">
+  window.images = {
+    splashpic: "<%= asset_path('splashpic.png') %>",
+    leewaylogo: "<%= asset_path('leewaylogo2.png') %>",
+    erroricon: "<%= asset_path('erroricon.jpg') %>",
+    lockicon: "<%= asset_path('lockicon.png') %>"
+  }
+</script>
+
+<% if logged_in? %>
+  <script type="text/javascript">
+    window.currentUser = <%= render(
+      "api/users/user.json.jbuilder",
+      user: current_user
+    ).html_safe %>
+  </script>
+<% end %>
